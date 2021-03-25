@@ -1,0 +1,855 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+
+/* ---------------menu secondaire------------------ */
+
+.menu_secondaire{
+
+    background: #118C73;
+
+}
+
+.menu_secondaire a{
+
+    display: block;
+    font-family: Saira Stencil One;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+
+}
+
+.menu_secondaire a:hover{
+
+    text-decoration: underline;
+
+}
+
+.menu_secondaire ul{
+
+    list-style: none;
+
+}
+
+.menu_secondaire>ul{
+
+    max-width: 1280px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+}
+
+.menu_secondaire>ul>li{
+
+    margin-right: 20px;
+
+}
+
+.menu_secondaire>ul>li:first-child{
+
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 5px;
+
+}
+
+.menu_secondaire>ul>li:first-child a{
+
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+
+    width: 35px;
+    height: 35px;
+
+    line-height: 12px;
+    text-align: center;
+
+}
+
+.menu_secondaire .li_menu_compte{
+
+    position: relative;
+
+}
+
+.menu_secondaire .menu_compte{
+
+    border-left: 5px solid #0d745f;
+    border-right: 5px solid #0d745f;
+    border-bottom: 0 solid #0d745f;
+
+    border-radius: 0 0 7px 7px;
+
+    background: #E2E2E2;
+    position: absolute;
+    max-height: 0;
+    width: 249px;
+    overflow: hidden;
+
+    left: -7px;
+    z-index: 1;
+
+    transition: max-height 0.5s, border-bottom 0.5s;
+
+}
+
+
+.menu_secondaire .li_menu_compte:hover .menu_compte{
+
+
+    max-height: 500px;    
+    border-bottom: 5px solid #0d745f;
+    transition: max-height 1s;
+
+}
+
+.menu_secondaire .menu_compte li:hover a{
+
+    background: #0d745f;
+    color: white;
+
+}
+
+.menu_secondaire .menu_compte a{
+
+    color: black;
+    text-decoration: none;
+
+}
+
+.menu_secondaire .menu_compte .separateur{
+
+    border-top: 1px dashed #0d745f;
+
+}
+
+
+
+
+/* ----------------------------------------------- */
+
+
+/* ------------Logo, Champ de recherche------------- */
+
+.logo img{
+
+    max-width: 210px;
+    margin: 15px 0 0 15px;
+
+}
+
+.LogoRecherche{
+
+    background-image: url("../images/logorecherche.png") ;
+    background-size: cover;
+    padding-bottom: 15px;
+
+    box-shadow:3px -6px 20px 5px rgba(0, 0, 0, 0.2)
+
+}
+
+.LogoRecherche>div{
+
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.champDeRecherche{
+
+    margin-left: 45px;
+    display: flex;
+    width: 100%;
+
+}
+
+.champDeRecherche select{
+
+    padding: 8px;
+    background:#e8e7e7;
+
+
+}
+
+.champDeRecherche input{
+    width: 80%;
+    padding: 8px;
+    margin-left: -1px;
+}
+
+.champDeRecherche button{
+
+    margin-left: -1px;
+    padding: 5px;
+
+}
+
+.champDeRecherche img{
+
+    max-width: 20px;
+
+}
+
+
+/* ---------------------------------------------------- */
+
+
+
+
+/* ------------------menu principale-------------- */
+
+.menu_principale{
+
+    margin: 20px 0;
+
+}
+
+.menu_principale a{
+
+    text-decoration: none;
+    display: block;
+    font-family: Salsa;
+    padding: 10px;
+    color: black;
+    letter-spacing: 1px;
+
+    transition: background 0.4s;
+
+    border-radius: 5px;
+
+    user-select: none;
+
+    
+
+}
+
+.menu_principale>ul>li>a{
+
+    text-transform: uppercase;
+
+}
+
+.menu_principale>ul>li>a:hover {
+
+    color:white;
+    background:#E77C00;
+
+    transition: all 0.5s;    
+}
+
+.menu_principale>ul{
+
+    max-width: 1280px;
+    margin: 0 auto;
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+
+}
+
+.menu_principale>ul>li{
+
+    margin-left: 80px;
+
+}
+
+.menu_principale li:first-child{
+
+    margin-left: 0;
+
+}
+
+/* ------------------------------------------------- */
+
+
+/* ---------------Presentation de livres--------------- */
+
+.presentationLivres{
+
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 0 35px;
+
+}
+
+.presentationLivres article{
+
+    width: calc((100% / 5) - 32px);
+    text-align: center;
+    padding: 10px;
+
+    height: 500px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 40px;
+    margin-left: 32px;
+
+    box-shadow: 7px 7px 16px 0px rgba(0, 0, 0, 0.478);
+    border-radius: 5px;
+
+}
+
+.presentationLivres article:nth-child(1){
+
+    margin-left: 0;
+
+}
+
+.presentationLivres article:nth-child(6n+6){
+
+    margin-left: 0;
+
+}
+
+.presentationLivres img{
+
+    max-width: 90%;
+    border-radius: 2px;
+
+}
+
+.presentationLivres article .boutons{
+
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0; 
+
+}
+
+.presentationLivres article a{
+
+    text-decoration: none;
+    display: block;
+    font-family: Salsa;
+    padding: 10px;
+    color: white;
+    letter-spacing: 1px;
+
+    transition: 0.4s;
+
+    border-radius: 5px;
+    background: #E77C00;
+    width: 80%;
+    margin: 5px auto;  
+    text-transform: uppercase;  
+   
+}
+
+.presentationLivres article a:hover{
+
+    background: rgb(207, 95, 3);
+    transition: 0.4s;
+
+}
+
+.presentationLivres article a.bouton_modifier{
+
+    background: #118C73;
+
+}
+
+.presentationLivres article a.bouton_modifier:hover{
+
+    background: rgb(13, 116, 95);
+
+}
+
+.presentationLivres article h2{
+
+    font-size: 1.1em;
+    margin-top: 5px;
+
+}
+
+.presentationLivres article h4{
+
+    font-size: 0.9em;
+    color: rgb(92, 92, 92);
+    margin-top: 5px;
+                    
+}
+
+.boite_pagination{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+
+.pagination a{
+
+    text-decoration: none;
+    color: black;
+    font-family: Rhodium Libre;
+    margin: 0 5px;
+
+    user-select: none;
+
+}
+
+.pagination a:hover{
+
+    color: #118C73;
+
+}
+
+.pagination .courant{
+
+    font-size: 1.3em;
+    font-weight: bold;
+
+}
+
+.pagination .carre:hover{
+
+    color: initial;
+
+}
+
+
+/* ---------------formulaires--------------------- */
+
+.formulaire{
+
+    font-family: salsa;
+
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.478);
+    border-radius: 5px;
+
+    padding: 10px;
+
+    max-width: 400px;
+    margin: 30px auto;
+
+}
+
+.formulaire > div{
+
+    margin-bottom: 15px;
+
+}
+
+.formulaire label{
+
+    display: block;
+    margin: 0 0 2px 3px;
+
+}
+
+.formulaire input, .formulaire select, .formulaire textarea{
+    
+    font-family: salsa;
+
+    width: 100%;
+    padding: 5px;
+
+    font-size: 0.9em;
+
+
+}
+
+
+/* ------------------------------------------------ */
+
+
+/* -----------------formulaire emprunter------------ */
+
+.formulaire_emprunter{
+
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.478);
+
+    display: flex;
+    max-width: 700px;
+    padding: 20px;
+
+    margin: 30px auto;
+
+    font-family: salsa;
+
+}
+
+.formulaire_emprunter > div{
+
+    margin-left: 20px;
+
+}
+
+.formulaire_emprunter img{
+
+    max-width: 250px;
+
+}
+
+.formulaire_emprunter h2, .formulaire_emprunter h3, .formulaire_emprunter h4, .formulaire_emprunter p{
+
+    margin: 5px 0;
+    font-size: 1em;
+
+}
+
+.formulaire_emprunter p{
+
+    margin: 10px 0;
+
+}
+
+.formulaire_emprunter button{
+
+    text-decoration: none;
+    display: block;
+    font-family: Salsa;
+    padding: 10px;
+    color: white;
+    letter-spacing: 1px;
+
+    transition: 0.4s;
+
+    border: none;
+    border-radius: 5px;
+    background: #E77C00;
+    width: 40%;
+    margin: 5px auto;  
+    text-transform: uppercase;
+
+}
+
+.formulaire_emprunter button:hover{
+
+    background: rgb(207, 95, 3);
+    transition: 0.4s;
+
+}
+
+.formulaire_emprunter .messageErreur{
+
+    color: darkred;
+
+}
+
+.formulaire_emprunter .messagePositif{
+
+    color: #0d745f;
+
+}
+
+/* ------------------------------------------------- */
+
+/* ---------------------auteurs--------------------- */
+
+.auteurs{
+
+    max-width: 1000px;
+
+}
+
+.editeurs{
+
+    max-width: 800px;
+
+}
+
+.tableau{
+
+    font-family: salsa;
+
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.478);
+    border-radius: 5px;
+
+    padding: 10px;
+
+    margin: 30px auto;        
+
+}
+
+.tableau .ligne .titre{
+
+    font-weight: bold;
+
+}
+
+.tableau .ligne{
+
+    display: flex;
+    border-bottom: 2px solid lightgray;
+
+}
+
+.tableau .ligne:last-of-type{
+
+    border-bottom: none;
+
+}
+
+.tableau .ligne .colonne{
+
+    width: 200px;
+    padding: 10px;
+
+    align-items: center;
+    display: flex;
+
+    border-right: 2px solid lightgray;
+
+}
+
+.tableau .ligne .colonne:last-of-type{
+
+    border-right: none;
+
+}
+
+.tableau .boutons{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tableau .boutons .bouton{
+
+    display: block;
+    text-decoration: none;
+    padding: 5px; 
+    width: calc(50% - 4px);
+    color: white;
+
+    border-radius: 3px;
+    text-align: center;
+    
+
+}
+
+
+.tableau .bouton_modifier{
+
+    background: #118C73;
+
+}
+
+.tableau .bouton_modifier:hover{
+
+    background: rgb(13, 116, 95);
+
+}
+
+.tableau .bouton_supprimer{
+
+    background: #E77C00;
+
+}
+
+.tableau .bouton_supprimer:hover{
+
+    background: rgb(207, 95, 3);
+    transition: 0.4s;
+
+}
+
+
+
+/* --------------------------------------------------- */
+
+
+/* -------------------confirmation---------------------- */
+
+.confirmation{
+
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 5px;
+
+    border-radius: 5px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.478);
+
+    background: #118c7346;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------- */
+
+
+/* --------------------footer--------------------- */
+
+footer{
+
+    background:   #118C73;
+
+}
+
+footer .sociaux{
+
+    max-width: 1280px;
+    margin: 0 auto;
+
+    padding: 10px;
+
+    margin-top: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+footer .reseauxSociaux{
+
+    width: 1260px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+}
+
+footer .reseauxSociaux picture{
+
+    margin-left: 30px;
+
+}
+
+footer .reseauxSociaux picture:first-child{
+
+    margin-left: 0;
+
+}
+
+footer .reseauxSociaux img{
+
+    max-width: 65px;
+    transition: 0.5s;
+
+}
+
+footer .reseauxSociaux img:hover{
+
+    transform: rotate(360deg);
+    transition: 0.5s;
+
+}
+
+footer .sociaux h3{
+
+    font-family: Rhodium Libre;
+    color: white;
+
+}
+
+footer .sociaux a{
+
+    font-family: Rhodium Libre;
+    display: block;
+    color: white;
+    text-decoration: none;
+
+}
+
+footer .sociaux a:hover{
+
+    text-decoration: underline;
+
+}
+
+/* ------------------------------------------------- */
+
+
+
+/* ----------------version tablette----------------- */
+
+@media screen and (max-width: 1048px) {
+
+
+/* ---------------Presentation de livres--------------- */
+    .presentationLivres article{
+
+        height: 335px;
+
+        font-size: 0.7em;
+
+    }
+
+    .menu_principale>ul>li{
+
+        margin-left: 40px;
+
+    }
+
+/* ---------------------------------------------------  */
+
+
+
+
+}
+
+
+
+/* -------------------------------------------------- */
+
+
+
+/* ----------------version mobile----------------- */
+
+@media screen and (max-width: 600px) {
+
+
+    .presentationLivres article{
+
+        width: 100%;
+        height: 435px;
+
+        margin-left: 0;
+
+
+
+    }
+
+    .presentationLivres img{
+
+        max-width: 40%;
+
+    }
+
+    
+
+}
+
+
+
+/* -------------------------------------------------- */
